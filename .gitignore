@@ -24,3 +24,18 @@ node_modules/
 .idea/
 .DS_Store
 *.swp
+
+# Secrets / personal details — never upload
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*
+secrets*
+*.local
+config.local.*
+.netrc
+id_rsa*
+*.token

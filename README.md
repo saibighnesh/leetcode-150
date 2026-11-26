@@ -58,6 +58,60 @@ Overall  [□□□□□□□□□□□□□□□□□□□□]   0 / 15
 
 ---
 
+## 🧠 Big-O — Why Complexity Matters
+
+Every solution here is tagged with its **time** and **space** complexity. That number decides whether code *passes* or *times out* — here's the shape of the problem:
+
+```mermaid
+xychart-beta
+    title "Operations vs input size (n) — why the curve matters"
+    x-axis "input size  n" [1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "operations" 0 --> 64
+    line [1, 1, 1, 1, 1, 1, 1, 1]
+    line [0, 1, 1.6, 2, 2.3, 2.6, 2.8, 3]
+    line [1, 2, 3, 4, 5, 6, 7, 8]
+    line [0, 2, 4.7, 8, 11.6, 15.5, 19.6, 24]
+    line [1, 4, 9, 16, 25, 36, 49, 64]
+```
+
+> **Flattest → steepest:** `O(1)` · `O(log n)` · `O(n)` · `O(n log n)` · `O(n²)`
+> The flat line barely moves as `n` grows — the top curve explodes. Same problem, wildly different fate on large inputs.
+
+### 📊 Complexity Cheat Sheet
+
+| Big-O | Name | Rating | n = 10 | n = 1,000 | n = 1,000,000 |
+|-------|------|:------:|-------:|----------:|--------------:|
+| `O(1)` | Constant | 🟢 Excellent | 1 | 1 | 1 |
+| `O(log n)` | Logarithmic | 🟢 Great | 3 | 10 | 20 |
+| `O(n)` | Linear | 🟡 Good | 10 | 1,000 | 1,000,000 |
+| `O(n log n)` | Linearithmic | 🟡 Fair | 33 | 10,000 | 20,000,000 |
+| `O(n²)` | Quadratic | 🟠 Slow | 100 | 1,000,000 | 10¹² |
+| `O(2ⁿ)` | Exponential | 🔴 Avoid | 1,024 | 10³⁰¹ | ☠️ |
+| `O(n!)` | Factorial | 🔴 Avoid | 3.6M | ☠️ | ☠️ |
+
+### 🎯 The Rule of Thumb
+
+```text
+LeetCode runs ~10^8 operations / second before Time Limit Exceeded.
+
+   n ≤ 10        →  O(n!)  / O(2ⁿ)   ok
+   n ≤ 20        →  O(2ⁿ)            ok
+   n ≤ 500       →  O(n³)            ok
+   n ≤ 5,000     →  O(n²)            ok
+   n ≤ 10^6      →  O(n log n) / O(n)
+   n > 10^6      →  O(log n)  / O(1)
+```
+
+### 🏷️ How every solution is tagged
+
+Each problem's `README.md` carries a complexity block, so the trade-off is always visible:
+
+> **Time:** `O(n)` &nbsp;·&nbsp; **Space:** `O(1)`
+
+Two solutions can both be "correct" — the complexity tag is what separates an **accepted** answer from a **TLE**.
+
+---
+
 ## 🗂️ Repo Structure
 
 ```text
