@@ -1,26 +1,136 @@
-# LeetCode Top Interview 150 — Progress Tracker
+<div align="center">
 
-Solving all 150 problems from the [LeetCode Top Interview 150](https://leetcode.com/studyplan/top-interview-150/) study plan, each in **9 languages**: Python, Java, C++, JavaScript, C#, Go, TypeScript, Kotlin, Ruby.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:168039,100:238636&height=210&section=header&text=LeetCode%20150&fontSize=72&fontColor=58a6ff&fontAlignY=36&desc=9%20Languages%20·%20One%20Problem%20at%20a%20Time&descSize=18&descAlignY=58" width="100%" alt="LeetCode 150 banner" />
 
-## Progress
+### 🎯 Solving the **Top Interview 150** — each problem, in **9 languages**, tracked daily.
 
-| Metric | Value |
-|---|---|
-| Solved | 0 / 150 |
-| Current streak | 0 days |
-| Started | _TBD_ |
+<br>
 
-Layout: one folder per problem (`NNNN-slug/`) holding a `README.md` plus one solution file per language.
+![Problems](https://img.shields.io/badge/Problems-150-1f6feb?style=for-the-badge&logo=leetcode&logoColor=white)
+![Languages](https://img.shields.io/badge/Languages-9-238636?style=for-the-badge&logo=polywork&logoColor=white)
+![Progress](https://img.shields.io/badge/Progress-0%2F150-da3633?style=for-the-badge&logo=target&logoColor=white)
+![Commitment](https://img.shields.io/badge/Cadence-Daily-8957e5?style=for-the-badge&logo=githubactions&logoColor=white)
 
-New problem folder: `./scripts/new.sh <number> <slug> "<Topic>"` — generates the folder with 9 stub files + README.
-
-Log each day in [LOG.md](LOG.md).
+</div>
 
 ---
 
-## Checklist
+## 📌 What is this?
 
-### Array / String (24)
+A disciplined, public grind through the [**LeetCode Top Interview 150**](https://leetcode.com/studyplan/top-interview-150/) — the curated set every FAANG-prep guide points to. The twist: **every problem is solved in 9 languages**, so each folder becomes a side-by-side study of how the same algorithm reads across the ecosystem.
+
+One problem. Nine implementations. Committed every day.
+
+---
+
+## 🎯 The Target
+
+| Goal | Target | Why |
+|------|--------|-----|
+| 🧩 **Solve all 150** | `150 / 150` | Full interview-pattern coverage across 23 topic groups |
+| 🌐 **9 languages each** | `1350` solutions | Fluency, not familiarity — see the algorithm, not the syntax |
+| 📅 **Daily cadence** | `1+ / day` | Consistency beats intensity. Ship something every day |
+| 📊 **Balanced GitHub activity** | `~25% each` | Commits · PRs · Issues · Code review — healthy, not commit-only |
+
+> **On the activity split:** GitHub's profile radar shows *shares of total activity* that always sum to 100%, so "all four above 30%" is mathematically impossible. The real target is **balance** — using branches, PRs, and issues per problem instead of raw commits to main.
+
+---
+
+## 📈 Progress
+
+```text
+Overall  [□□□□□□□□□□□□□□□□□□□□]   0 / 150   (0.0%)
+```
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)
+
+</div>
+
+---
+
+## 🗂️ Repo Structure
+
+```text
+Leetcode-150/
+├── README.md              ← you are here (master tracker)
+├── LOG.md                 ← daily journal
+├── scripts/
+│   └── new.sh             ← scaffolds a problem folder with 9 stubs
+└── NNNN-slug/             ← one folder per problem
+    ├── README.md          ← problem, approach, complexity
+    ├── solution.py        ·  Solution.java   ·  solution.cpp
+    ├── solution.js        ·  Solution.cs     ·  solution.go
+    └── solution.ts        ·  Solution.kt     ·  solution.rb
+```
+
+---
+
+## ⚙️ Daily Workflow
+
+```bash
+# 1. New branch for the day
+git checkout -b day-01
+
+# 2. Scaffold the problem (number, slug, topic)
+./scripts/new.sh 1 two-sum "Hashmap"
+
+# 3. Solve it in the 9 language files, fill the folder README
+
+# 4. Tick the box below + add a LOG.md entry, then:
+git add -A && git commit -m "Day 1: 1. Two Sum (9 langs)"
+git push -u origin day-01
+
+# 5. Open a PR, self-review, merge → balances commits / PRs / reviews
+```
+
+---
+
+## 🧮 Topic Progress
+
+| # | Topic | Solved |
+|---|-------|:------:|
+| 1 | Array / String | `0 / 24` |
+| 2 | Two Pointers | `0 / 5` |
+| 3 | Sliding Window | `0 / 4` |
+| 4 | Matrix | `0 / 5` |
+| 5 | Hashmap | `0 / 9` |
+| 6 | Intervals | `0 / 4` |
+| 7 | Stack | `0 / 5` |
+| 8 | Linked List | `0 / 11` |
+| 9 | Binary Tree — General | `0 / 14` |
+| 10 | Binary Tree — BFS | `0 / 4` |
+| 11 | Binary Search Tree | `0 / 3` |
+| 12 | Graph — General | `0 / 6` |
+| 13 | Graph — BFS | `0 / 3` |
+| 14 | Trie | `0 / 3` |
+| 15 | Backtracking | `0 / 7` |
+| 16 | Divide & Conquer | `0 / 4` |
+| 17 | Kadane's Algorithm | `0 / 2` |
+| 18 | Binary Search | `0 / 7` |
+| 19 | Heap | `0 / 4` |
+| 20 | Bit Manipulation | `0 / 6` |
+| 21 | Math | `0 / 6` |
+| 22 | 1D DP | `0 / 5` |
+| 23 | Multidimensional DP | `0 / 9` |
+| | **Total** | **`0 / 150`** |
+
+---
+
+## ✅ Full Checklist
+
+<details>
+<summary><b>Array / String (24)</b></summary>
+
 - [ ] 88. Merge Sorted Array
 - [ ] 27. Remove Element
 - [ ] 26. Remove Duplicates from Sorted Array
@@ -45,28 +155,40 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 6. Zigzag Conversion
 - [ ] 28. Find the Index of the First Occurrence in a String
 - [ ] 68. Text Justification
+</details>
 
-### Two Pointers (5)
+<details>
+<summary><b>Two Pointers (5)</b></summary>
+
 - [ ] 125. Valid Palindrome
 - [ ] 392. Is Subsequence
 - [ ] 167. Two Sum II - Input Array Is Sorted
 - [ ] 11. Container With Most Water
 - [ ] 15. 3Sum
+</details>
 
-### Sliding Window (4)
+<details>
+<summary><b>Sliding Window (4)</b></summary>
+
 - [ ] 209. Minimum Size Subarray Sum
 - [ ] 3. Longest Substring Without Repeating Characters
 - [ ] 30. Substring with Concatenation of All Words
 - [ ] 76. Minimum Window Substring
+</details>
 
-### Matrix (5)
+<details>
+<summary><b>Matrix (5)</b></summary>
+
 - [ ] 36. Valid Sudoku
 - [ ] 54. Spiral Matrix
 - [ ] 48. Rotate Image
 - [ ] 73. Set Matrix Zeroes
 - [ ] 289. Game of Life
+</details>
 
-### Hashmap (9)
+<details>
+<summary><b>Hashmap (9)</b></summary>
+
 - [ ] 383. Ransom Note
 - [ ] 205. Isomorphic Strings
 - [ ] 290. Word Pattern
@@ -76,21 +198,30 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 202. Happy Number
 - [ ] 219. Contains Duplicate II
 - [ ] 128. Longest Consecutive Sequence
+</details>
 
-### Intervals (4)
+<details>
+<summary><b>Intervals (4)</b></summary>
+
 - [ ] 228. Summary Ranges
 - [ ] 56. Merge Intervals
 - [ ] 57. Insert Interval
 - [ ] 452. Minimum Number of Arrows to Burst Balloons
+</details>
 
-### Stack (5)
+<details>
+<summary><b>Stack (5)</b></summary>
+
 - [ ] 20. Valid Parentheses
 - [ ] 71. Simplify Path
 - [ ] 155. Min Stack
 - [ ] 150. Evaluate Reverse Polish Notation
 - [ ] 224. Basic Calculator
+</details>
 
-### Linked List (11)
+<details>
+<summary><b>Linked List (11)</b></summary>
+
 - [ ] 141. Linked List Cycle
 - [ ] 2. Add Two Numbers
 - [ ] 21. Merge Two Sorted Lists
@@ -102,8 +233,11 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 61. Rotate List
 - [ ] 86. Partition List
 - [ ] 146. LRU Cache
+</details>
 
-### Binary Tree General (14)
+<details>
+<summary><b>Binary Tree — General (14)</b></summary>
+
 - [ ] 104. Maximum Depth of Binary Tree
 - [ ] 100. Same Tree
 - [ ] 226. Invert Binary Tree
@@ -118,37 +252,55 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 173. Binary Search Tree Iterator
 - [ ] 222. Count Complete Tree Nodes
 - [ ] 236. Lowest Common Ancestor of a Binary Tree
+</details>
 
-### Binary Tree BFS (4)
+<details>
+<summary><b>Binary Tree — BFS (4)</b></summary>
+
 - [ ] 199. Binary Tree Right Side View
 - [ ] 637. Average of Levels in Binary Tree
 - [ ] 102. Binary Tree Level Order Traversal
 - [ ] 103. Binary Tree Zigzag Level Order Traversal
+</details>
 
-### Binary Search Tree (3)
+<details>
+<summary><b>Binary Search Tree (3)</b></summary>
+
 - [ ] 530. Minimum Absolute Difference in BST
 - [ ] 230. Kth Smallest Element in a BST
 - [ ] 98. Validate Binary Search Tree
+</details>
 
-### Graph General (6)
+<details>
+<summary><b>Graph — General (6)</b></summary>
+
 - [ ] 200. Number of Islands
 - [ ] 130. Surrounded Regions
 - [ ] 133. Clone Graph
 - [ ] 399. Evaluate Division
 - [ ] 207. Course Schedule
 - [ ] 210. Course Schedule II
+</details>
 
-### Graph BFS (3)
+<details>
+<summary><b>Graph — BFS (3)</b></summary>
+
 - [ ] 909. Snakes and Ladders
 - [ ] 433. Minimum Genetic Mutation
 - [ ] 127. Word Ladder
+</details>
 
-### Trie (3)
+<details>
+<summary><b>Trie (3)</b></summary>
+
 - [ ] 208. Implement Trie (Prefix Tree)
 - [ ] 211. Design Add and Search Words Data Structure
 - [ ] 212. Word Search II
+</details>
 
-### Backtracking (7)
+<details>
+<summary><b>Backtracking (7)</b></summary>
+
 - [ ] 17. Letter Combinations of a Phone Number
 - [ ] 77. Combinations
 - [ ] 46. Permutations
@@ -156,18 +308,27 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 52. N-Queens II
 - [ ] 22. Generate Parentheses
 - [ ] 79. Word Search
+</details>
 
-### Divide & Conquer (4)
+<details>
+<summary><b>Divide & Conquer (4)</b></summary>
+
 - [ ] 108. Convert Sorted Array to Binary Search Tree
 - [ ] 148. Sort List
 - [ ] 427. Construct Quad Tree
 - [ ] 23. Merge k Sorted Lists
+</details>
 
-### Kadane's Algorithm (2)
+<details>
+<summary><b>Kadane's Algorithm (2)</b></summary>
+
 - [ ] 53. Maximum Subarray
 - [ ] 918. Maximum Sum Circular Subarray
+</details>
 
-### Binary Search (7)
+<details>
+<summary><b>Binary Search (7)</b></summary>
+
 - [ ] 35. Search Insert Position
 - [ ] 74. Search a 2D Matrix
 - [ ] 162. Find Peak Element
@@ -175,37 +336,52 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 34. Find First and Last Position of Element in Sorted Array
 - [ ] 153. Find Minimum in Rotated Sorted Array
 - [ ] 4. Median of Two Sorted Arrays
+</details>
 
-### Heap (4)
+<details>
+<summary><b>Heap (4)</b></summary>
+
 - [ ] 215. Kth Largest Element in an Array
 - [ ] 502. IPO
 - [ ] 373. Find K Pairs with Smallest Sums
 - [ ] 295. Find Median from Data Stream
+</details>
 
-### Bit Manipulation (6)
+<details>
+<summary><b>Bit Manipulation (6)</b></summary>
+
 - [ ] 67. Add Binary
 - [ ] 190. Reverse Bits
 - [ ] 191. Number of 1 Bits
 - [ ] 136. Single Number
 - [ ] 137. Single Number II
 - [ ] 201. Bitwise AND of Numbers Range
+</details>
 
-### Math (6)
+<details>
+<summary><b>Math (6)</b></summary>
+
 - [ ] 9. Palindrome Number
 - [ ] 66. Plus One
 - [ ] 172. Factorial Trailing Zeroes
 - [ ] 69. Sqrt(x)
 - [ ] 50. Pow(x, n)
 - [ ] 149. Max Points on a Line
+</details>
 
-### 1D DP (5)
+<details>
+<summary><b>1D DP (5)</b></summary>
+
 - [ ] 70. Climbing Stairs
 - [ ] 198. House Robber
 - [ ] 139. Word Break
 - [ ] 322. Coin Change
 - [ ] 300. Longest Increasing Subsequence
+</details>
 
-### Multidimensional DP (9)
+<details>
+<summary><b>Multidimensional DP (9)</b></summary>
+
 - [ ] 120. Triangle
 - [ ] 64. Minimum Path Sum
 - [ ] 63. Unique Paths II
@@ -215,7 +391,14 @@ Log each day in [LOG.md](LOG.md).
 - [ ] 123. Best Time to Buy and Sell Stock III
 - [ ] 188. Best Time to Buy and Sell Stock IV
 - [ ] 221. Maximal Square
+</details>
 
 ---
 
-**Total: 150 problems across 23 topic groups.**
+<div align="center">
+
+**23 topic groups · 150 problems · 9 languages · 1 commit a day.**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:238636,50:168039,100:0d1117&height=120&section=footer" width="100%" alt="footer" />
+
+</div>

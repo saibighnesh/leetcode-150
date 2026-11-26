@@ -14,9 +14,7 @@ Notes:
 
 ---
 
-## 2026-11-26 — Day 1
-Solved: 1 (running total: 1/150)
-Problems:
-- 1. Two Sum (Hashmap) — langs: py, java, cpp, js, cs, go, ts, kt, rb
+## 2026-11-26 — Day 0 (setup)
+Solved: 0 (running total: 0/150)
 Notes:
-- Repo scaffolded. Hashmap one-pass pattern: store complement, O(n) time / O(n) space.
+- Repo initialized. README + generator script ready. Problem uploads start tomorrow.
