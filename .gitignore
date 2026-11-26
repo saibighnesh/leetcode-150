@@ -1,0 +1,26 @@
+# Compiled / build output
+*.class
+*.o
+*.out
+*.exe
+bin/
+obj/
+target/
+dist/
+build/
+
+# Go
+*.test
+
+# Node / TypeScript
+node_modules/
+*.tsbuildinfo
+
+# C#
+*.user
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
