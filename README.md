@@ -70,9 +70,17 @@ Overall  [□□□□□□□□□□□□□□□□□□□□]   0 / 15
 
 ## 📊 GitHub Activity
 
-These cards update automatically as you commit — the streak counter is your daily accountability meter.
+Your commits literally feed the snake below — it eats the contribution graph. These cards update automatically; the streak counter is your daily accountability meter.
 
 <div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saibighnesh/leetcode-150/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/saibighnesh/leetcode-150/output/snake.svg" />
+  <img alt="Contribution snake animation eating the commit graph" src="https://raw.githubusercontent.com/saibighnesh/leetcode-150/output/snake.svg" width="97%" />
+</picture>
+
+<br><br>
 
 <img src="https://streak-stats.demolab.com?user=saibighnesh&theme=radical&hide_border=true&border_radius=10&background=0B0E16&ring=00EAFF&fire=FF2E97&currStreakLabel=00EAFF&sideLabels=8AA6C8&dates=4A5568&stroke=1A2234" alt="GitHub streak stats" width="48%" />
 <img src="https://github-readme-stats.vercel.app/api?username=saibighnesh&show_icons=true&hide_border=true&border_radius=10&bg_color=0B0E16&title_color=00EAFF&icon_color=FF2E97&text_color=8AA6C8&count_private=true" alt="GitHub stats" width="48%" />
