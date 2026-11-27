@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-label="LeetCode 150 — 150 problems, 9 languages, daily commits">
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00eaff"/>
+      <stop offset="0.33" stop-color="#7b5cff"/>
+      <stop offset="0.66" stop-color="#ff2e97"/>
+      <stop offset="1" stop-color="#00ff9d"/>
+    </linearGradient>
+    <linearGradient id="frameGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00eaff"/>
+      <stop offset="0.5" stop-color="#ff2e97"/>
+      <stop offset="1" stop-color="#00ff9d"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#0d1322" stop-opacity="0"/>
+      <stop offset="1" stop-color="#05070d" stop-opacity="0.9"/>
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#12324a" stroke-width="1"/>
+    </pattern>
+    <mask id="titleMask">
+      <text x="600" y="172" text-anchor="middle" font-family="'Courier New',monospace" font-size="104" font-weight="bold" letter-spacing="6" fill="#fff">LEETCODE 150</text>
+    </mask>
+    <style>
+      @keyframes flick { 0%,100%{opacity:1} 92%{opacity:1} 93%{opacity:.55} 94%{opacity:1} 97%{opacity:.7} 98%{opacity:1} }
+      @keyframes pulse { 0%,100%{opacity:.35} 50%{opacity:1} }
+      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+      @keyframes drift { from{transform:translateY(0)} to{transform:translateY(-40px)} }
+      .title  { animation: flick 5s infinite steps(1); }
+      .dot    { animation: pulse 2.4s infinite ease-in-out; }
+      .cursor { animation: blink 1s infinite steps(1); }
+      .gridlayer { animation: drift 6s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1200" height="320" fill="#080b12"/>
+  <g class="gridlayer" opacity="0.5"><rect x="-40" y="-40" width="1280" height="420" fill="url(#grid)"/></g>
+  <rect width="1200" height="320" fill="url(#vignette)"/>
+
+  <!-- HUD frame -->
+  <rect x="14" y="14" width="1172" height="292" rx="10" fill="none" stroke="url(#frameGrad)" stroke-width="2"
+        stroke-dasharray="26 14" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-80" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <!-- corner brackets -->
+  <g stroke="#00eaff" stroke-width="3" fill="none" filter="url(#softglow)">
+    <path d="M30 54V34H50"/><path d="M1170 54V34H1150"/>
+    <path d="M30 266V286H50"/><path d="M1170 266V286H1150"/>
+  </g>
+
+  <!-- title -->
+  <g filter="url(#glow)">
+    <text class="title" x="600" y="172" text-anchor="middle" font-family="'Courier New',monospace" font-size="104" font-weight="bold" letter-spacing="6" fill="url(#neon)">LEETCODE 150</text>
+  </g>
+  <!-- shine sweep clipped to title -->
+  <g mask="url(#titleMask)">
+    <rect x="-320" y="70" width="260" height="130" fill="url(#shine)">
+      <animate attributeName="x" from="-320" to="1200" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- subtitle -->
+  <text x="600" y="214" text-anchor="middle" font-family="'Courier New',monospace" font-size="21" letter-spacing="7" fill="#8aa6c8">150 PROBLEMS &#160;·&#160; 9 LANGUAGES &#160;·&#160; DAILY COMMITS</text>
+
+  <!-- data readout -->
+  <g font-family="'Courier New',monospace" font-size="16" letter-spacing="2" filter="url(#softglow)">
+    <circle class="dot" cx="372" cy="256" r="4" fill="#00ff9d"/>
+    <text x="386" y="261" fill="#00ff9d">TARGET_150</text>
+    <circle class="dot" cx="560" cy="256" r="4" fill="#00eaff" style="animation-delay:.6s"/>
+    <text x="574" y="261" fill="#00eaff">STACK_x9</text>
+    <circle class="dot" cx="726" cy="256" r="4" fill="#ff2e97" style="animation-delay:1.2s"/>
+    <text x="740" y="261" fill="#ff2e97">MODE_DAILY</text>
+    <rect class="cursor" x="828" y="250" width="10" height="14" fill="#8aa6c8"/>
+  </g>
+
+  <!-- scanline -->
+  <rect x="14" y="0" width="1172" height="2" fill="#00eaff" opacity="0.25">
+    <animate attributeName="y" from="20" to="300" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>

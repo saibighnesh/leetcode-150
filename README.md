@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:168039,100:238636&height=210&section=header&text=LeetCode%20150&fontSize=72&fontColor=58a6ff&fontAlignY=36&desc=9%20Languages%20·%20One%20Problem%20at%20a%20Time&descSize=18&descAlignY=58" width="100%" alt="LeetCode 150 banner" />
+<img src="assets/banner.svg" width="100%" alt="LeetCode 150" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=700&color=58A6FF&center=true&vCenter=true&width=640&height=50&lines=150+Problems.+9+Languages.;One+commit+a+day.;Top+Interview+150+%E2%86%92+Mastered." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=700&color=00EAFF&center=true&vCenter=true&width=640&height=50&lines=150+Problems.+9+Languages.;One+commit+a+day.;Top+Interview+150+%E2%86%92+Mastered." alt="Typing SVG" />
 
 <br>
 
@@ -17,9 +17,9 @@
 ![Last Commit](https://img.shields.io/github/last-commit/saibighnesh/leetcode-150?style=for-the-badge&color=1f6feb&logo=git&logoColor=white)
 ![Repo Size](https://img.shields.io/github/repo-size/saibighnesh/leetcode-150?style=for-the-badge&color=8957e5&logo=github&logoColor=white)
 
-</div>
+<img src="assets/divider.svg" width="100%" alt="" />
 
----
+</div>
 
 ## 📌 What is this?
 
@@ -74,16 +74,16 @@ These cards update automatically as you commit — the streak counter is your da
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=saibighnesh&theme=tokyonight&hide_border=true&border_radius=10&fire=238636&ring=58A6FF&currStreakLabel=58A6FF" alt="GitHub streak stats" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api?username=saibighnesh&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&icon_color=238636&title_color=58A6FF&count_private=true" alt="GitHub stats" width="48%" />
+<img src="https://streak-stats.demolab.com?user=saibighnesh&theme=radical&hide_border=true&border_radius=10&background=0B0E16&ring=00EAFF&fire=FF2E97&currStreakLabel=00EAFF&sideLabels=8AA6C8&dates=4A5568&stroke=1A2234" alt="GitHub streak stats" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=saibighnesh&show_icons=true&hide_border=true&border_radius=10&bg_color=0B0E16&title_color=00EAFF&icon_color=FF2E97&text_color=8AA6C8&count_private=true" alt="GitHub stats" width="48%" />
 
 <br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=saibighnesh&theme=tokyo-night&hide_border=true&radius=10&bg_color=0d1117&color=58a6ff&line=238636&point=ffffff&area=true&area_color=238636" alt="Contribution activity graph" width="97%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=saibighnesh&hide_border=true&radius=10&bg_color=0B0E16&color=00EAFF&line=FF2E97&point=FFFFFF&area=true&area_color=7B5CFF" alt="Contribution activity graph" width="97%" />
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=saibighnesh&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="GitHub trophies" />
+<img src="https://github-profile-trophy.vercel.app/?username=saibighnesh&theme=radical&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="GitHub trophies" />
 
 </div>
 
@@ -484,6 +484,8 @@ git push -u origin day-01
 
 **23 topic groups · 150 problems · 9 languages · 1 commit a day.**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:238636,50:168039,100:0d1117&height=120&section=footer" width="100%" alt="footer" />
+<img src="assets/divider.svg" width="100%" alt="" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00eaff,50:7b5cff,100:ff2e97&height=120&section=footer" width="100%" alt="footer" />
 
 </div>
