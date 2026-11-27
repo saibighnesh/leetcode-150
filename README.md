@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:168039,100:238636&height=210&section=header&text=LeetCode%20150&fontSize=72&fontColor=58a6ff&fontAlignY=36&desc=9%20Languages%20·%20One%20Problem%20at%20a%20Time&descSize=18&descAlignY=58" width="100%" alt="LeetCode 150 banner" />
 
-### 🎯 Solving the **Top Interview 150** — each problem, in **9 languages**, tracked daily.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=700&color=58A6FF&center=true&vCenter=true&width=640&height=50&lines=150+Problems.+9+Languages.;One+commit+a+day.;Top+Interview+150+%E2%86%92+Mastered." alt="Typing SVG" />
 
 <br>
 
@@ -10,6 +10,12 @@
 ![Languages](https://img.shields.io/badge/Languages-9-238636?style=for-the-badge&logo=polywork&logoColor=white)
 ![Progress](https://img.shields.io/badge/Progress-0%2F150-da3633?style=for-the-badge&logo=target&logoColor=white)
 ![Commitment](https://img.shields.io/badge/Cadence-Daily-8957e5?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<br>
+
+![Stars](https://img.shields.io/github/stars/saibighnesh/leetcode-150?style=for-the-badge&color=238636&logo=github&logoColor=white)
+![Last Commit](https://img.shields.io/github/last-commit/saibighnesh/leetcode-150?style=for-the-badge&color=1f6feb&logo=git&logoColor=white)
+![Repo Size](https://img.shields.io/github/repo-size/saibighnesh/leetcode-150?style=for-the-badge&color=8957e5&logo=github&logoColor=white)
 
 </div>
 
@@ -44,6 +50,10 @@ Overall  [□□□□□□□□□□□□□□□□□□□□]   0 / 15
 
 <div align="center">
 
+<img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,cs,go,typescript,kotlin,ruby&theme=dark&perline=9" alt="Tech stack" />
+
+<br><br>
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
@@ -53,6 +63,27 @@ Overall  [□□□□□□□□□□□□□□□□□□□□]   0 / 15
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white)
+
+</div>
+
+---
+
+## 📊 GitHub Activity
+
+These cards update automatically as you commit — the streak counter is your daily accountability meter.
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=saibighnesh&theme=tokyonight&hide_border=true&border_radius=10&fire=238636&ring=58A6FF&currStreakLabel=58A6FF" alt="GitHub streak stats" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=saibighnesh&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&icon_color=238636&title_color=58A6FF&count_private=true" alt="GitHub stats" width="48%" />
+
+<br><br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=saibighnesh&theme=tokyo-night&hide_border=true&radius=10&bg_color=0d1117&color=58a6ff&line=238636&point=ffffff&area=true&area_color=238636" alt="Contribution activity graph" width="97%" />
+
+<br><br>
+
+<img src="https://github-profile-trophy.vercel.app/?username=saibighnesh&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="GitHub trophies" />
 
 </div>
 
