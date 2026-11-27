@@ -44,11 +44,11 @@ One problem. Nine implementations. Committed every day.
 
 ## 📈 Progress
 
-```text
-Overall  [□□□□□□□□□□□□□□□□□□□□]   0 / 150   (0.0%)
-```
-
 <div align="center">
+
+<img src="assets/progress.svg" width="100%" alt="Mission progress: 0 of 150" />
+
+<br><br>
 
 <img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,cs,go,typescript,kotlin,ruby&theme=dark&perline=9" alt="Tech stack" />
 
@@ -89,10 +89,6 @@ Your commits literally feed the snake below — it eats the contribution graph. 
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=saibighnesh&hide_border=true&radius=10&bg_color=0B0E16&color=00EAFF&line=FF2E97&point=FFFFFF&area=true&area_color=7B5CFF" alt="Contribution activity graph" width="97%" />
 
-<br><br>
-
-<img src="https://github-profile-trophy.vercel.app/?username=saibighnesh&theme=radical&no-frame=true&no-bg=true&margin-w=6&margin-h=6&column=7" alt="GitHub trophies" />
-
 </div>
 
 ---
@@ -101,22 +97,24 @@ Your commits literally feed the snake below — it eats the contribution graph. 
 
 Every solution here is tagged with its **time** and **space** complexity. That number decides whether code *passes* or *times out* — here's the shape of the problem:
 
-```mermaid
-xychart-beta
-    title "Operations vs input size (n) — why the curve matters"
-    x-axis "input size  n" [1, 2, 3, 4, 5, 6, 7, 8]
-    y-axis "operations" 0 --> 64
-    line [1, 1, 1, 1, 1, 1, 1, 1]
-    line [0, 1, 1.6, 2, 2.3, 2.6, 2.8, 3]
-    line [1, 2, 3, 4, 5, 6, 7, 8]
-    line [0, 2, 4.7, 8, 11.6, 15.5, 19.6, 24]
-    line [1, 4, 9, 16, 25, 36, 49, 64]
-```
+<div align="center">
 
-> **Flattest → steepest:** `O(1)` · `O(log n)` · `O(n)` · `O(n log n)` · `O(n²)`
-> The flat line barely moves as `n` grows — the top curve explodes. Same problem, wildly different fate on large inputs.
+<img src="assets/bigo-chart.svg" width="100%" alt="Animated Big-O growth chart" />
 
-### 📊 Complexity Cheat Sheet
+</div>
+
+### 📊 Complexity · Threat Level
+
+<div align="center">
+
+<img src="assets/complexity-bars.svg" width="100%" alt="Animated complexity rating bars" />
+
+</div>
+
+<details>
+<summary><b>📋 Exact operation counts — click to expand</b></summary>
+
+<br>
 
 | Big-O | Name | Rating | n = 10 | n = 1,000 | n = 1,000,000 |
 |-------|------|:------:|-------:|----------:|--------------:|
@@ -127,6 +125,8 @@ xychart-beta
 | `O(n²)` | Quadratic | 🟠 Slow | 100 | 1,000,000 | 10¹² |
 | `O(2ⁿ)` | Exponential | 🔴 Avoid | 1,024 | 10³⁰¹ | ☠️ |
 | `O(n!)` | Factorial | 🔴 Avoid | 3.6M | ☠️ | ☠️ |
+
+</details>
 
 ### 🎯 The Rule of Thumb
 
