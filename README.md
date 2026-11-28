@@ -85,10 +85,6 @@ Your commits literally feed the snake below — it eats the contribution graph. 
 <img src="https://streak-stats.demolab.com?user=saibighnesh&theme=radical&hide_border=true&border_radius=10&background=0B0E16&ring=00EAFF&fire=FF2E97&currStreakLabel=00EAFF&sideLabels=8AA6C8&dates=4A5568&stroke=1A2234" alt="GitHub streak stats" width="48%" />
 <img src="https://github-readme-stats.vercel.app/api?username=saibighnesh&show_icons=true&hide_border=true&border_radius=10&bg_color=0B0E16&title_color=00EAFF&icon_color=FF2E97&text_color=8AA6C8&count_private=true" alt="GitHub stats" width="48%" />
 
-<br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=saibighnesh&hide_border=true&radius=10&bg_color=0B0E16&color=00EAFF&line=FF2E97&point=FFFFFF&area=true&area_color=7B5CFF" alt="Contribution activity graph" width="97%" />
-
 </div>
 
 ---
@@ -130,16 +126,11 @@ Every solution here is tagged with its **time** and **space** complexity. That n
 
 ### 🎯 The Rule of Thumb
 
-```text
-LeetCode runs ~10^8 operations / second before Time Limit Exceeded.
+<div align="center">
 
-   n ≤ 10        →  O(n!)  / O(2ⁿ)   ok
-   n ≤ 20        →  O(2ⁿ)            ok
-   n ≤ 500       →  O(n³)            ok
-   n ≤ 5,000     →  O(n²)            ok
-   n ≤ 10^6      →  O(n log n) / O(n)
-   n > 10^6      →  O(log n)  / O(1)
-```
+<img src="assets/rule-of-thumb.svg" width="100%" alt="Input size to complexity budget" />
+
+</div>
 
 ### 🏷️ How every solution is tagged
 
@@ -153,22 +144,24 @@ Two solutions can both be "correct" — the complexity tag is what separates an 
 
 ## 🗂️ Repo Structure
 
-```text
-Leetcode-150/
-├── README.md              ← you are here (master tracker)
-├── LOG.md                 ← daily journal
-├── scripts/
-│   └── new.sh             ← scaffolds a problem folder with 9 stubs
-└── NNNN-slug/             ← one folder per problem
-    ├── README.md          ← problem, approach, complexity
-    ├── solution.py        ·  Solution.java   ·  solution.cpp
-    ├── solution.js        ·  Solution.cs     ·  solution.go
-    └── solution.ts        ·  Solution.kt     ·  solution.rb
-```
+<div align="center">
+
+<img src="assets/structure.svg" width="100%" alt="Repository structure" />
+
+</div>
 
 ---
 
 ## ⚙️ Daily Workflow
+
+<div align="center">
+
+<img src="assets/workflow.svg" width="100%" alt="Daily workflow pipeline" />
+
+</div>
+
+<details>
+<summary><b>⌨️ Copy-paste commands</b></summary>
 
 ```bash
 # 1. New branch for the day
@@ -185,37 +178,17 @@ git push -u origin day-01
 
 # 5. Open a PR, self-review, merge → balances commits / PRs / reviews
 ```
+</details>
 
 ---
 
 ## 🧮 Topic Progress
 
-| # | Topic | Solved |
-|---|-------|:------:|
-| 1 | Array / String | `0 / 24` |
-| 2 | Two Pointers | `0 / 5` |
-| 3 | Sliding Window | `0 / 4` |
-| 4 | Matrix | `0 / 5` |
-| 5 | Hashmap | `0 / 9` |
-| 6 | Intervals | `0 / 4` |
-| 7 | Stack | `0 / 5` |
-| 8 | Linked List | `0 / 11` |
-| 9 | Binary Tree — General | `0 / 14` |
-| 10 | Binary Tree — BFS | `0 / 4` |
-| 11 | Binary Search Tree | `0 / 3` |
-| 12 | Graph — General | `0 / 6` |
-| 13 | Graph — BFS | `0 / 3` |
-| 14 | Trie | `0 / 3` |
-| 15 | Backtracking | `0 / 7` |
-| 16 | Divide & Conquer | `0 / 4` |
-| 17 | Kadane's Algorithm | `0 / 2` |
-| 18 | Binary Search | `0 / 7` |
-| 19 | Heap | `0 / 4` |
-| 20 | Bit Manipulation | `0 / 6` |
-| 21 | Math | `0 / 6` |
-| 22 | 1D DP | `0 / 5` |
-| 23 | Multidimensional DP | `0 / 9` |
-| | **Total** | **`0 / 150`** |
+<div align="center">
+
+<img src="assets/topics.svg" width="100%" alt="Topic map of the 150 problems" />
+
+</div>
 
 ---
 

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 770" width="100%" role="img" aria-label="Topic map of the 150 problems">
+  <defs>
+    <filter id="tg" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .grow { transform-box:fill-box; transform-origin:left center;
+              animation:gw 1s cubic-bezier(.2,.85,.25,1) both; filter:url(#tg); }
+      @keyframes gw { from { transform:scaleX(0) } to { transform:scaleX(1) } }
+    </style>
+  </defs>
+
+  <rect width="900" height="770" fill="#080b12"/>
+  <text x="28" y="42" font-family="'Courier New',monospace" font-size="22" font-weight="bold" letter-spacing="3" fill="#e6f0ff">THE 150 &#8901; TOPIC MAP</text>
+  <text x="28" y="66" font-family="'Courier New',monospace" font-size="13" fill="#6f8bad">bar length = problems in topic &#8901; glow fill = solved &#8901; <tspan fill="#00eaff">0 / 150</tspan> today</text>
+  <line x1="28" y1="78" x2="872" y2="78" stroke="#1d3350" stroke-width="1.5"/>
+
+  <g font-family="'Courier New',monospace">
+    <text x="238" y="104" text-anchor="end" font-size="14" fill="#9fb6d4">Array / String</text><rect class="grow" x="250" y="90" width="528" height="18" rx="5" fill="#00eaff" fill-opacity="0.16" stroke="#00eaff" stroke-width="1.5" style="animation-delay:.03s"/><text x="786" y="104" font-size="12" fill="#00eaff">0/24</text>
+    <text x="238" y="133" text-anchor="end" font-size="14" fill="#9fb6d4">Two Pointers</text><rect class="grow" x="250" y="119" width="110" height="18" rx="5" fill="#7b5cff" fill-opacity="0.16" stroke="#7b5cff" stroke-width="1.5" style="animation-delay:.07s"/><text x="368" y="133" font-size="12" fill="#7b5cff">0/5</text>
+    <text x="238" y="162" text-anchor="end" font-size="14" fill="#9fb6d4">Sliding Window</text><rect class="grow" x="250" y="148" width="88" height="18" rx="5" fill="#ff2e97" fill-opacity="0.16" stroke="#ff2e97" stroke-width="1.5" style="animation-delay:.11s"/><text x="346" y="162" font-size="12" fill="#ff2e97">0/4</text>
+    <text x="238" y="191" text-anchor="end" font-size="14" fill="#9fb6d4">Matrix</text><rect class="grow" x="250" y="177" width="110" height="18" rx="5" fill="#00ff9d" fill-opacity="0.16" stroke="#00ff9d" stroke-width="1.5" style="animation-delay:.15s"/><text x="368" y="191" font-size="12" fill="#00ff9d">0/5</text>
+    <text x="238" y="220" text-anchor="end" font-size="14" fill="#9fb6d4">Hashmap</text><rect class="grow" x="250" y="206" width="198" height="18" rx="5" fill="#ffb020" fill-opacity="0.16" stroke="#ffb020" stroke-width="1.5" style="animation-delay:.19s"/><text x="456" y="220" font-size="12" fill="#ffb020">0/9</text>
+    <text x="238" y="249" text-anchor="end" font-size="14" fill="#9fb6d4">Intervals</text><rect class="grow" x="250" y="235" width="88" height="18" rx="5" fill="#00eaff" fill-opacity="0.16" stroke="#00eaff" stroke-width="1.5" style="animation-delay:.23s"/><text x="346" y="249" font-size="12" fill="#00eaff">0/4</text>
+    <text x="238" y="278" text-anchor="end" font-size="14" fill="#9fb6d4">Stack</text><rect class="grow" x="250" y="264" width="110" height="18" rx="5" fill="#7b5cff" fill-opacity="0.16" stroke="#7b5cff" stroke-width="1.5" style="animation-delay:.27s"/><text x="368" y="278" font-size="12" fill="#7b5cff">0/5</text>
+    <text x="238" y="307" text-anchor="end" font-size="14" fill="#9fb6d4">Linked List</text><rect class="grow" x="250" y="293" width="242" height="18" rx="5" fill="#ff2e97" fill-opacity="0.16" stroke="#ff2e97" stroke-width="1.5" style="animation-delay:.31s"/><text x="500" y="307" font-size="12" fill="#ff2e97">0/11</text>
+    <text x="238" y="336" text-anchor="end" font-size="14" fill="#9fb6d4">Tree &#8901; General</text><rect class="grow" x="250" y="322" width="308" height="18" rx="5" fill="#00ff9d" fill-opacity="0.16" stroke="#00ff9d" stroke-width="1.5" style="animation-delay:.35s"/><text x="566" y="336" font-size="12" fill="#00ff9d">0/14</text>
+    <text x="238" y="365" text-anchor="end" font-size="14" fill="#9fb6d4">Tree &#8901; BFS</text><rect class="grow" x="250" y="351" width="88" height="18" rx="5" fill="#ffb020" fill-opacity="0.16" stroke="#ffb020" stroke-width="1.5" style="animation-delay:.39s"/><text x="346" y="365" font-size="12" fill="#ffb020">0/4</text>
+    <text x="238" y="394" text-anchor="end" font-size="14" fill="#9fb6d4">BST</text><rect class="grow" x="250" y="380" width="66" height="18" rx="5" fill="#00eaff" fill-opacity="0.16" stroke="#00eaff" stroke-width="1.5" style="animation-delay:.43s"/><text x="324" y="394" font-size="12" fill="#00eaff">0/3</text>
+    <text x="238" y="423" text-anchor="end" font-size="14" fill="#9fb6d4">Graph &#8901; General</text><rect class="grow" x="250" y="409" width="132" height="18" rx="5" fill="#7b5cff" fill-opacity="0.16" stroke="#7b5cff" stroke-width="1.5" style="animation-delay:.47s"/><text x="390" y="423" font-size="12" fill="#7b5cff">0/6</text>
+    <text x="238" y="452" text-anchor="end" font-size="14" fill="#9fb6d4">Graph &#8901; BFS</text><rect class="grow" x="250" y="438" width="66" height="18" rx="5" fill="#ff2e97" fill-opacity="0.16" stroke="#ff2e97" stroke-width="1.5" style="animation-delay:.51s"/><text x="324" y="452" font-size="12" fill="#ff2e97">0/3</text>
+    <text x="238" y="481" text-anchor="end" font-size="14" fill="#9fb6d4">Trie</text><rect class="grow" x="250" y="467" width="66" height="18" rx="5" fill="#00ff9d" fill-opacity="0.16" stroke="#00ff9d" stroke-width="1.5" style="animation-delay:.55s"/><text x="324" y="481" font-size="12" fill="#00ff9d">0/3</text>
+    <text x="238" y="510" text-anchor="end" font-size="14" fill="#9fb6d4">Backtracking</text><rect class="grow" x="250" y="496" width="154" height="18" rx="5" fill="#ffb020" fill-opacity="0.16" stroke="#ffb020" stroke-width="1.5" style="animation-delay:.59s"/><text x="412" y="510" font-size="12" fill="#ffb020">0/7</text>
+    <text x="238" y="539" text-anchor="end" font-size="14" fill="#9fb6d4">Divide &amp; Conquer</text><rect class="grow" x="250" y="525" width="88" height="18" rx="5" fill="#00eaff" fill-opacity="0.16" stroke="#00eaff" stroke-width="1.5" style="animation-delay:.63s"/><text x="346" y="539" font-size="12" fill="#00eaff">0/4</text>
+    <text x="238" y="568" text-anchor="end" font-size="14" fill="#9fb6d4">Kadane</text><rect class="grow" x="250" y="554" width="44" height="18" rx="5" fill="#7b5cff" fill-opacity="0.16" stroke="#7b5cff" stroke-width="1.5" style="animation-delay:.67s"/><text x="302" y="568" font-size="12" fill="#7b5cff">0/2</text>
+    <text x="238" y="597" text-anchor="end" font-size="14" fill="#9fb6d4">Binary Search</text><rect class="grow" x="250" y="583" width="154" height="18" rx="5" fill="#ff2e97" fill-opacity="0.16" stroke="#ff2e97" stroke-width="1.5" style="animation-delay:.71s"/><text x="412" y="597" font-size="12" fill="#ff2e97">0/7</text>
+    <text x="238" y="626" text-anchor="end" font-size="14" fill="#9fb6d4">Heap</text><rect class="grow" x="250" y="612" width="88" height="18" rx="5" fill="#00ff9d" fill-opacity="0.16" stroke="#00ff9d" stroke-width="1.5" style="animation-delay:.75s"/><text x="346" y="626" font-size="12" fill="#00ff9d">0/4</text>
+    <text x="238" y="655" text-anchor="end" font-size="14" fill="#9fb6d4">Bit Manipulation</text><rect class="grow" x="250" y="641" width="132" height="18" rx="5" fill="#ffb020" fill-opacity="0.16" stroke="#ffb020" stroke-width="1.5" style="animation-delay:.79s"/><text x="390" y="655" font-size="12" fill="#ffb020">0/6</text>
+    <text x="238" y="684" text-anchor="end" font-size="14" fill="#9fb6d4">Math</text><rect class="grow" x="250" y="670" width="132" height="18" rx="5" fill="#00eaff" fill-opacity="0.16" stroke="#00eaff" stroke-width="1.5" style="animation-delay:.83s"/><text x="390" y="684" font-size="12" fill="#00eaff">0/6</text>
+    <text x="238" y="713" text-anchor="end" font-size="14" fill="#9fb6d4">1D DP</text><rect class="grow" x="250" y="699" width="110" height="18" rx="5" fill="#7b5cff" fill-opacity="0.16" stroke="#7b5cff" stroke-width="1.5" style="animation-delay:.87s"/><text x="368" y="713" font-size="12" fill="#7b5cff">0/5</text>
+    <text x="238" y="742" text-anchor="end" font-size="14" fill="#9fb6d4">Multi-D DP</text><rect class="grow" x="250" y="728" width="198" height="18" rx="5" fill="#ff2e97" fill-opacity="0.16" stroke="#ff2e97" stroke-width="1.5" style="animation-delay:.91s"/><text x="456" y="742" font-size="12" fill="#ff2e97">0/9</text>
+  </g>
+</svg>

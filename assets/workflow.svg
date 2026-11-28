@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" role="img" aria-label="Daily workflow pipeline">
+  <defs>
+    <filter id="wg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @keyframes bob { 0%,100%{opacity:.55} 50%{opacity:1} }
+      .n1{animation:bob 2.4s infinite ease-in-out}
+      .n2{animation:bob 2.4s infinite ease-in-out .3s}
+      .n3{animation:bob 2.4s infinite ease-in-out .6s}
+      .n4{animation:bob 2.4s infinite ease-in-out .9s}
+      .n5{animation:bob 2.4s infinite ease-in-out 1.2s}
+    </style>
+  </defs>
+
+  <rect width="900" height="240" fill="#080b12"/>
+  <text x="30" y="40" font-family="'Courier New',monospace" font-size="22" font-weight="bold" letter-spacing="3" fill="#e6f0ff">DAILY WORKFLOW &#8901; THE LOOP</text>
+  <line x1="30" y1="54" x2="870" y2="54" stroke="#1d3350" stroke-width="1.5"/>
+
+  <!-- connector -->
+  <line x1="110" y1="120" x2="790" y2="120" stroke="#1d3350" stroke-width="3"/>
+  <line x1="110" y1="120" x2="790" y2="120" stroke="#00eaff" stroke-width="2" stroke-dasharray="3 12" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="1.6s" repeatCount="indefinite"/>
+  </line>
+  <!-- traveling pulse -->
+  <circle cy="120" r="5" fill="#ffffff" filter="url(#wg)">
+    <animate attributeName="cx" values="110;790" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#00eaff;#7b5cff;#ff2e97;#ffb020;#00ff9d" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- nodes -->
+  <g font-family="'Courier New',monospace" text-anchor="middle">
+    <g class="n1"><circle cx="110" cy="120" r="30" fill="#07202a" stroke="#00eaff" stroke-width="2.5" filter="url(#wg)"/></g>
+    <text x="110" y="126" font-size="20" fill="#00eaff" text-anchor="middle">&#9095;</text>
+    <text x="110" y="178" font-size="15" font-weight="bold" fill="#8fd9ff">BRANCH</text>
+    <text x="110" y="196" font-size="11" fill="#5c7a99">day-NN</text>
+
+    <g class="n2"><circle cx="290" cy="120" r="30" fill="#140e2a" stroke="#7b5cff" stroke-width="2.5" filter="url(#wg)"/></g>
+    <text x="290" y="126" font-size="17" fill="#7b5cff" text-anchor="middle">&lt;/&gt;</text>
+    <text x="290" y="178" font-size="15" font-weight="bold" fill="#b9a8ff">SOLVE</text>
+    <text x="290" y="196" font-size="11" fill="#5c7a99">9 langs</text>
+
+    <g class="n3"><circle cx="470" cy="120" r="30" fill="#2a0f18" stroke="#ff2e97" stroke-width="2.5" filter="url(#wg)"/></g>
+    <circle cx="470" cy="120" r="7" fill="none" stroke="#ff2e97" stroke-width="2.5"/>
+    <text x="470" y="178" font-size="15" font-weight="bold" fill="#ff8fc0">COMMIT</text>
+    <text x="470" y="196" font-size="11" fill="#5c7a99">+ tick box</text>
+
+    <g class="n4"><circle cx="650" cy="120" r="30" fill="#2a1a0a" stroke="#ffb020" stroke-width="2.5" filter="url(#wg)"/></g>
+    <text x="650" y="126" font-size="18" fill="#ffb020" text-anchor="middle">&#8646;</text>
+    <text x="650" y="178" font-size="15" font-weight="bold" fill="#ffcf78">PULL REQ</text>
+    <text x="650" y="196" font-size="11" fill="#5c7a99">self-review</text>
+
+    <g class="n5"><circle cx="830" cy="120" r="30" fill="#06201a" stroke="#00ff9d" stroke-width="2.5" filter="url(#wg)"/></g>
+    <text x="830" y="127" font-size="20" fill="#00ff9d" text-anchor="middle">&#10003;</text>
+    <text x="830" y="178" font-size="15" font-weight="bold" fill="#7affce">MERGE</text>
+    <text x="830" y="196" font-size="11" fill="#5c7a99">+1 solved</text>
+  </g>
+
+  <!-- step numbers -->
+  <g font-family="'Courier New',monospace" font-size="12" fill="#3a4a60" text-anchor="middle">
+    <text x="110" y="74">01</text><text x="290" y="74">02</text><text x="470" y="74">03</text><text x="650" y="74">04</text><text x="830" y="74">05</text>
+  </g>
+
+  <!-- loop caption -->
+  <text x="450" y="226" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#51708f">&#8635; REPEAT EVERY DAY &#8901; branch &#8594; PR &#8594; merge keeps commits, PRs &amp; reviews balanced</text>
+</svg>

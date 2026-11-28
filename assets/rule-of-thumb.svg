@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" role="img" aria-label="Input size to complexity budget">
+  <defs>
+    <filter id="rg" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .row { animation:slide .6s ease-out both; }
+      @keyframes slide { from { opacity:.2; transform:translateX(-16px) } to { opacity:1; transform:translateX(0) } }
+      @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:.2} }
+      .cur { animation:blink 1.1s infinite steps(1) }
+    </style>
+  </defs>
+
+  <rect width="900" height="420" fill="#080b12"/>
+  <text x="30" y="40" font-family="'Courier New',monospace" font-size="22" font-weight="bold" letter-spacing="3" fill="#e6f0ff">INPUT SIZE &#8594; COMPLEXITY BUDGET</text>
+  <text x="30" y="64" font-family="'Courier New',monospace" font-size="14" fill="#6f8bad">LeetCode budget &#8776; <tspan fill="#00eaff">10&#8312; operations / second</tspan> before <tspan fill="#ff2e97">TLE</tspan></text>
+  <line x1="30" y1="78" x2="870" y2="78" stroke="#1d3350" stroke-width="1.5"/>
+
+  <!-- rows: n-range  ->  allowed complexity chips -->
+  <!-- row template y baseline -->
+  <g font-family="'Courier New',monospace">
+    <!-- 1 -->
+    <g class="row" style="animation-delay:.10s">
+      <rect x="30" y="98" width="240" height="40" rx="8" fill="#1a0e14" stroke="#ff2e97" stroke-width="1.5"/>
+      <text x="48" y="124" font-size="18" fill="#ff8fc0">n &#8804; 10</text>
+      <text x="286" y="124" font-size="20" fill="#3a4a60">&#8594;</text>
+      <rect x="320" y="100" width="118" height="36" rx="8" fill="#2a0f18"/><text x="332" y="124" font-size="16" fill="#ff5b8f">O(n!)</text>
+      <rect x="450" y="100" width="118" height="36" rx="8" fill="#2a0f18"/><text x="462" y="124" font-size="16" fill="#ff5b8f">O(2&#8319;)</text>
+      <text x="600" y="124" font-size="14" fill="#6f8bad" filter="url(#rg)">brute force OK</text>
+    </g>
+    <!-- 2 -->
+    <g class="row" style="animation-delay:.22s">
+      <rect x="30" y="150" width="240" height="40" rx="8" fill="#1a0e14" stroke="#ff2e97" stroke-width="1.5"/>
+      <text x="48" y="176" font-size="18" fill="#ff8fc0">n &#8804; 20</text>
+      <text x="286" y="176" font-size="20" fill="#3a4a60">&#8594;</text>
+      <rect x="320" y="152" width="118" height="36" rx="8" fill="#2a0f18"/><text x="332" y="176" font-size="16" fill="#ff5b8f">O(2&#8319;)</text>
+      <text x="600" y="176" font-size="14" fill="#6f8bad">bitmask / subsets</text>
+    </g>
+    <!-- 3 -->
+    <g class="row" style="animation-delay:.34s">
+      <rect x="30" y="202" width="240" height="40" rx="8" fill="#1a140a" stroke="#ff8c1a" stroke-width="1.5"/>
+      <text x="48" y="228" font-size="18" fill="#ffc078">n &#8804; 500</text>
+      <text x="286" y="228" font-size="20" fill="#3a4a60">&#8594;</text>
+      <rect x="320" y="204" width="118" height="36" rx="8" fill="#2a1a0a"/><text x="332" y="228" font-size="16" fill="#ffab45">O(n&#179;)</text>
+      <text x="600" y="228" font-size="14" fill="#6f8bad">triple loop / DP</text>
+    </g>
+    <!-- 4 -->
+    <g class="row" style="animation-delay:.46s">
+      <rect x="30" y="254" width="240" height="40" rx="8" fill="#1a140a" stroke="#ffb020" stroke-width="1.5"/>
+      <text x="48" y="280" font-size="18" fill="#ffc078">n &#8804; 5,000</text>
+      <text x="286" y="280" font-size="20" fill="#3a4a60">&#8594;</text>
+      <rect x="320" y="256" width="118" height="36" rx="8" fill="#2a1a0a"/><text x="332" y="280" font-size="16" fill="#ffcf4d">O(n&#178;)</text>
+      <text x="600" y="280" font-size="14" fill="#6f8bad">nested loops / DP</text>
+    </g>
+    <!-- 5 -->
+    <g class="row" style="animation-delay:.58s">
+      <rect x="30" y="306" width="240" height="40" rx="8" fill="#08160f" stroke="#00eaff" stroke-width="1.5"/>
+      <text x="48" y="332" font-size="18" fill="#7ee6ff">n &#8804; 10&#8310;</text>
+      <text x="286" y="332" font-size="20" fill="#3a4a60">&#8594;</text>
+      <rect x="320" y="308" width="150" height="36" rx="8" fill="#07202a"/><text x="332" y="332" font-size="16" fill="#58d6ff">O(n log n)</text>
+      <rect x="482" y="308" width="100" height="36" rx="8" fill="#07202a"/><text x="494" y="332" font-size="16" fill="#58d6ff">O(n)</text>
+      <text x="600" y="332" font-size="14" fill="#6f8bad">sort / hash / two-ptr</text>
+    </g>
+    <!-- 6 -->
+    <g class="row" style="animation-delay:.70s">
+      <rect x="30" y="358" width="240" height="40" rx="8" fill="#08160f" stroke="#00ff9d" stroke-width="1.5"/>
+      <text x="48" y="384" font-size="18" fill="#8affd0">n &gt; 10&#8310;</text>
+      <text x="286" y="384" font-size="20" fill="#3a4a60">&#8594;</text>
+      <rect x="320" y="360" width="128" height="36" rx="8" fill="#06201a"/><text x="332" y="384" font-size="16" fill="#4dffb8">O(log n)</text>
+      <rect x="460" y="360" width="100" height="36" rx="8" fill="#06201a"/><text x="472" y="384" font-size="16" fill="#4dffb8">O(1)</text>
+      <text x="600" y="384" font-size="14" fill="#6f8bad">binary search / math</text>
+      <rect class="cur" x="712" y="368" width="9" height="20" fill="#00ff9d"/>
+    </g>
+  </g>
+</svg>
